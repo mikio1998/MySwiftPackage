@@ -14,6 +14,8 @@ public struct SwiftUIView: View {
     public init() {}
     public var body: some View {
         Text("THIS IS THE SWIFTUI VIEW FROM THE PACKAGE!")
+        Image("Planet")
+
     }
 }
 

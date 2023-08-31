@@ -14,6 +14,7 @@ struct MySwiftPackageExampleApp: App {
         WindowGroup {
 //            ContentView()
             SwiftUIView()
+//            SwiftUIView()
         }
     }
 }
