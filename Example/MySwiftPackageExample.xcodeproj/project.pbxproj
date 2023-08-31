@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E953844D2AA07F6600CA14E5 /* MySwiftPackage in Frameworks */ = {isa = PBXBuildFile; productRef = E953844C2AA07F6600CA14E5 /* MySwiftPackage */; };
 		E9A3F5F72AA07BCD00ACB8FD /* MySwiftPackageExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3F5F62AA07BCD00ACB8FD /* MySwiftPackageExampleApp.swift */; };
 		E9A3F5F92AA07BCD00ACB8FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3F5F82AA07BCD00ACB8FD /* ContentView.swift */; };
 		E9A3F5FB2AA07BCE00ACB8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A3F5FA2AA07BCE00ACB8FD /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E953844D2AA07F6600CA14E5 /* MySwiftPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = MySwiftPackageExample;
+			packageProductDependencies = (
+				E953844C2AA07F6600CA14E5 /* MySwiftPackage */,
+			);
 			productName = MySwiftPackageExample;
 			productReference = E9A3F5F32AA07BCD00ACB8FD /* MySwiftPackageExample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = E9A3F5EA2AA07BCD00ACB8FD;
+			packageReferences = (
+				E953844B2AA07F6600CA14E5 /* XCRemoteSwiftPackageReference "MySwiftPackage" */,
+			);
 			productRefGroup = E9A3F5F42AA07BCD00ACB8FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E953844B2AA07F6600CA14E5 /* XCRemoteSwiftPackageReference "MySwiftPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mikio1998/MySwiftPackage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E953844C2AA07F6600CA14E5 /* MySwiftPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E953844B2AA07F6600CA14E5 /* XCRemoteSwiftPackageReference "MySwiftPackage" */;
+			productName = MySwiftPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9A3F5EB2AA07BCD00ACB8FD /* Project object */;
 }

@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "myswiftpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mikio1998/MySwiftPackage",
+      "state" : {
+        "branch" : "main",
+        "revision" : "80ca1f8007cfbfa4ff7919d0a9c73deb3b7ab30a"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "ac6c0fc9da221873e01bd1a0d4818498a71eef33",
+        "version" : "4.0.6"
+      }
+    }
+  ],
+  "version" : 2
+}
