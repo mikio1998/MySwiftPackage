@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -12,6 +12,7 @@ let package = Package(
             targets: ["MySwiftPackage"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.0"),
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
@@ -20,7 +21,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "MySwiftPackage",
-            dependencies: []),
+            dependencies: ["Starscream"],
+            path: "Sources"), 
         .testTarget(
             name: "MySwiftPackageTests",
             dependencies: ["MySwiftPackage"]),
